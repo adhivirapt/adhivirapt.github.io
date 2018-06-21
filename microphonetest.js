@@ -9,12 +9,14 @@ window.onload = function () {
         recorder.ondataavailable = e => {
             if (counter == 100) {
                 recorder.stop();
+                console.log("STOPME---" + new Date().getTime())
             }
             // add stream data to chunks
             counter ++;
 
         };
         // start recording with 1 second time between receiving 'ondataavailable' events
+        console.log("STARTME---" + new Date().getTime())
         recorder.start(200)
         // setTimeout to stop recording after 4 seconds
 
