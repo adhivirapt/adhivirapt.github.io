@@ -24,7 +24,7 @@ window.onload = function () {
                 // setTimeout to stop recording after 4 seconds
         
             }).catch(console.error);
-        }, 15000);
+        }, 20000);
 
     }
 
