@@ -1,6 +1,10 @@
+window.onload = function () {
 
-window.onload = function () { 
-    console.log("STARTME---" + new Date().getTime())
-    array50000.sort();
-    console.log("STOPME---" + new Date().getTime())
+    setTimeout(function () {
+
+        console.log("STARTME---" + new Date().getTime())
+        array50000.sort();
+        console.log("STOPME---" + new Date().getTime())
+    }, 15000);
+
 }
