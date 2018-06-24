@@ -10,7 +10,7 @@ window.onload = function () {
             if (counter == 0 && counter1 == 1) {
                 console.log("STOPME---" + new Date().getTime())
                 counter1++;
-            } else if (xmlHttp.readyState == 4 && xmlHttp.status == 200 && counter1 == 1) {
+            } else if (xmlHttp.status == 200 && counter1 == 1) {
                 getRequest(xmlHttp)
                 counter--;
             }
