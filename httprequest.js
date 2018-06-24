@@ -18,7 +18,7 @@ window.onload = function () {
     }, 15000);
 
     function getRequest(xmlHttp) {
-        xmlHttp.open("GET", "https://adhivirapt.github.io/blah", true); // true for asynchronous 
+        xmlHttp.open("GET", "https://adhivirapt.github.io", true); // true for asynchronous 
         xmlHttp.send(null);
     }
 }
