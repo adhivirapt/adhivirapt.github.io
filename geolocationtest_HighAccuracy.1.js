@@ -18,7 +18,7 @@ window.onload = function () {
     function success() {
         i++;
         console.log(i)
-        if (i == 50000) {
+        if (i == 100) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
@@ -28,7 +28,7 @@ window.onload = function () {
     function error(err) {
         i++;
         console.log(i)
-        if (i == 50000) {
+        if (i == 100) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
