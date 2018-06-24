@@ -19,7 +19,7 @@ window.onload = function () {
 
     function getRequest(xmlHttp) {
         var xmlHttp1 = new XMLHttpRequest();
-        xmlHttp1.open("GET", "https://www.google.com/", true); // true for asynchronous 
+        xmlHttp1.open("GET", "https://adhivirapt.github.io/blah", true); // true for asynchronous 
         xmlHttp1.send(null);
     }
 }
