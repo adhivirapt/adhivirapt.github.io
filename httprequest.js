@@ -18,7 +18,8 @@ window.onload = function () {
     }, 15000);
 
     function getRequest(xmlHttp) {
-        xmlHttp.open("GET", "https://localhost:8081/api/simpleExample", true); // true for asynchronous 
-        xmlHttp.send(null);
+        var xmlHttp1 = new XMLHttpRequest();
+        xmlHttp1.open("GET", "https://localhost:8081/api/simpleExample", true); // true for asynchronous 
+        xmlHttp1.send(null);
     }
 }
