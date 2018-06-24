@@ -18,7 +18,7 @@ window.onload = function () {
     }, 15000);
 
     function getRequest(xmlHttp) {
-        xmlHttp.open("GET", "http://localhost:8081/api/simpleExample", true); // true for asynchronous 
+        xmlHttp.open("GET", "https://localhost:8081/api/simpleExample", true); // true for asynchronous 
         xmlHttp.send(null);
     }
 }
