@@ -1,5 +1,5 @@
 window.onload = function () {
-    var counter = 100
+    var counter = 200
     var counter1 = 1
 
     setTimeout(function () {
