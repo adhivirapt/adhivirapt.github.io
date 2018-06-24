@@ -7,13 +7,10 @@ window.onload = function () {
         var xmlHttp = new XMLHttpRequest();
         getRequest(xmlHttp)
         xmlHttp.onreadystatechange = function () {
-            // if (counter == 0 && counter1 == 1) {
-            //     console.log("STOPME---" + new Date().getTime())
-            //     counter1++;
-            // } else 
-            console.log(xmlHttp.status)
-            if (xmlHttp.status == 200 && counter1 == 1) {
-                
+            if (counter == 0 && counter1 == 1) {
+                console.log("STOPME---" + new Date().getTime())
+                counter1++;
+            } else if (xmlHttp.status == 200 && counter1 == 1) {
                 getRequest(xmlHttp)
                 counter--;
             }
