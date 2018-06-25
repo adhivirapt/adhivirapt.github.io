@@ -24,6 +24,8 @@ function getPicture() {
 
                 video.addEventListener("canplay", function (e) {
                     canvas.getContext("2d").drawImage(video, 0, 0);
+                    var img = canvas.toDataURL("image/png");
+                    console.log(img)
                 });
         },
         function () {})
