@@ -1,7 +1,7 @@
 window.onload = function () {
     var options = {
         enableHighAccuracy: false,
-        timeout: 200,
+        timeout: 10000,
         maximumAge: 0
     };
     i = 0;
@@ -20,7 +20,7 @@ window.onload = function () {
     function success() {
         i++;
         console.log(i)
-        if (i == 100) {
+        if (i == 20) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
@@ -30,7 +30,7 @@ window.onload = function () {
     function error(err) {
         console.log(err)
         i++;
-        if (i == 100) {
+        if (i == 20) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
