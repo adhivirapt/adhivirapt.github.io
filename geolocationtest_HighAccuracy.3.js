@@ -17,6 +17,7 @@ window.onload = function () {
     }
 
     function success() {
+        i++;
         if (i == 5000) {
             console.log("STOPME---" + new Date().getTime())
         }
