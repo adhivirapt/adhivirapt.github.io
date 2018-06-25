@@ -23,7 +23,7 @@ window.onload = function () {
     }
 
     function error(err) {
-        // console.log(err)
+        console.log(err)
         i++;
     }
 }
