@@ -19,6 +19,7 @@ window.onload = function () {
 
     function success() {
         i++;
+        console.log(i)
         if (i == 100) {
             console.log("STOPME---" + new Date().getTime())
         } else {
@@ -27,6 +28,7 @@ window.onload = function () {
     }
 
     function error(err) {
+        console.log(err)
         i++;
         if (i == 100) {
             console.log("STOPME---" + new Date().getTime())
