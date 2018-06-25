@@ -6,25 +6,32 @@ window.onload = function () {
     };
     i = 0;
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success, error, options);
+        navigator.geolocation.getCurrentPosition(successTrivial, error, options);
         setTimeout(function () {
             console.log("STARTME---" + new Date().getTime())
-            for (j = 0; j < 60000; j++) {
-                navigator.geolocation.getCurrentPosition(success, error, options);
-            }
+            navigator.geolocation.getCurrentPosition(success, error, options);
+
         }, 15000);
 
     }
 
+    function successTrivial() {}
+
     function success() {
         i++;
-        if (i == 60000) {
+        if (i == 100) {
             console.log("STOPME---" + new Date().getTime())
+        } else {
+            navigator.geolocation.getCurrentPosition(success, error, options);
         }
     }
 
     function error(err) {
-        console.log(err)
         i++;
+        if (i == 100) {
+            console.log("STOPME---" + new Date().getTime())
+        } else {
+            navigator.geolocation.getCurrentPosition(success, error, options);
+        }
     }
 }
