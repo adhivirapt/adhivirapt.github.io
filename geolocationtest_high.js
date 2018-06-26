@@ -20,7 +20,7 @@ window.onload = function () {
     function success() {
         i++;
         // console.log(i)
-        if (i == 40) {
+        if (i == 10) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
@@ -30,7 +30,7 @@ window.onload = function () {
     function error(err) {
         // console.log(err)
         i++;
-        if (i == 40) {
+        if (i == 10) {
             console.log("STOPME---" + new Date().getTime())
         } else {
             navigator.geolocation.getCurrentPosition(success, error, options);
