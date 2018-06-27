@@ -1,6 +1,6 @@
 window.onload = function () {
     var options = {
-        enableHighAccuracy: true,
+        enableHighAccuracy: false,
         timeout: 10000,
         maximumAge: 0
     };
@@ -19,7 +19,7 @@ window.onload = function () {
 
     function success() {
         i++;
-        console.log(i)
+        // console.log(i)
         if (i == 10) {
             console.log("STOPME---" + new Date().getTime())
         } else {
@@ -28,7 +28,7 @@ window.onload = function () {
     }
 
     function error(err) {
-        console.log(err)
+        // console.log(err)
         i++;
         if (i == 10) {
             console.log("STOPME---" + new Date().getTime())
